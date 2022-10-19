@@ -2,9 +2,8 @@
 
 /**
  * print_alphabet - make alphabets
- * Return: void
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char letters;
 

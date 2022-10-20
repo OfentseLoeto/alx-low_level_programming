@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_beur - prints every minutes of the day of Jack Beur
+ * jack_bauer - prints every minutes of the day of Jack Bauer
  *
  * Return: ...
  */

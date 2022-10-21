@@ -19,6 +19,8 @@
    -if the number is less than 0: is negative
 
 *followed by a new line
+
+
 2-This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n.
 
 

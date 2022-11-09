@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 
 	for (j = 1; j < strlen(g); j++)
 	{
-	if (g[j] < 48 || g[j] < 57)
+	if (g[j] < 48 || g[j] > 57)
 
 	{
 

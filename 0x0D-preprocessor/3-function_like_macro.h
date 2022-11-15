@@ -3,5 +3,6 @@
 
 #define ABS(x) ((x < 0) ? (x) * (-1) : (x))
 #include "main.h"
+int _putchar(char c);
 
 #endif

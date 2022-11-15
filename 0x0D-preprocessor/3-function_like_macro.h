@@ -1,5 +1,5 @@
-#ifndef _HEADER_
-#define _HEADER_
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
 #define ABS(x) ((x) < 0 ? ((x) * -1) : (x))
 #include "main.h"

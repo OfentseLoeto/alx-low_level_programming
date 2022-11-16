@@ -1,11 +1,8 @@
 #ifndef SUM_H
 #define SUM_H
+
+#define SUM(x, y) ((x) + (y))
+
 #include "main.h"
-
-#define MUL(x, y) (x) * (y)
-
-int MUL(3 + 2) * (4 + 2);
-	print("total=%d", MUL);
-
 
 #endif

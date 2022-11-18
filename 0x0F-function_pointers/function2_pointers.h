@@ -3,7 +3,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <<udis86.h>
+#include <udis86.h>
 
 ime(char *name, void (*f)(char *));                                                                                                      
 

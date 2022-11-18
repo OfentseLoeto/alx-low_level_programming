@@ -36,7 +36,7 @@ int (*get_op_func(char *s))(int, int)
 
 
 
-	while (i < 4)
+	while (i < 5)
 
 	{
 

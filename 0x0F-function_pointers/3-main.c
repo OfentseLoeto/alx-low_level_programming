@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	int (*oprt)(int, int);
 
-	if (argc != 5)
+	if (argc != 4)
 
 	{
 

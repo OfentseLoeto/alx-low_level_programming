@@ -3,7 +3,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "3-calc.h"
+
 unsigned int _strspn(char *s, char *accept);
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));

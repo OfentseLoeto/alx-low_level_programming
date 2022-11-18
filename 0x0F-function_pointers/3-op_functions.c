@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 #include <stdio.h>
-#include "function_poiters.h"
 
 /**
  * op_add - ...

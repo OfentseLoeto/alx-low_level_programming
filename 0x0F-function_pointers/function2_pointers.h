@@ -3,7 +3,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <<udis86.h>
 
 ime(char *name, void (*f)(char *));                                                                                                      
 
@@ -22,5 +22,8 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 
 void _putchar(char c);
+nt main(int argc, char *argv[]);
+int (*get_op_func(char *s))(int, int);
+
 
 #endif

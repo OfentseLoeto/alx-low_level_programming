@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	int (*oprt)(int, int);
 
-	if (argc != 4)
+	if (argc != 5)
 
 	{
 
@@ -41,6 +41,8 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+
+	exit(100);
 
 	return (0);
 

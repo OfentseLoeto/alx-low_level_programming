@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - Print a string
- * @separator: The string to be printed
- * @n: Number of string
+ * print_strings - ...
+ * @separator: ...
+ * @n: ...
  *
- * Return: Nothing
+ * Return: ...
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)

@@ -3,6 +3,7 @@
 #define "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int _strlen(const char *s);
 void _putchar(char c);                                                                                                                

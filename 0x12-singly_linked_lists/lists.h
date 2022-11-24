@@ -2,9 +2,9 @@
 #define LISTS_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-
-/**                                                                                                                                     
+/**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the structuer
@@ -13,9 +13,9 @@
  * Description: singly linked list node structure
  */
 
-typedef struct list_s                                                                                                                   
+typedef struct list_s
 
-{                                                                                                                                       
+{
 
 	 char *str;
 	 unsigned int len;

@@ -4,17 +4,21 @@
 #include <stdlib.h>
 
 /**
- * print_list - Print list elements
+ * print_list - prints all the elements of a list_t list
  * @h: A linked list
  *
- * Return: Number of nodes
+ * Return: Number of nodes in h
  */
 
 size_t print_list(const list_t *h)
 {
 	size_t nodes = 0;
 
-	while (h)
+	if (h == 0)
+
+	return (0);
+
+	while (h != NULL)
 	{
 
 	if (h->str == NULL)

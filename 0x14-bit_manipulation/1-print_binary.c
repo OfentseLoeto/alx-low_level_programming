@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 	return;
 	}
 
-	_devide(n);
+	_divide(n);
 }
 
 /**
@@ -27,14 +27,14 @@ void print_binary(unsigned long int n)
  * Return: ...
  */
 
-void _devide(unsigned long int n)
+void _divide(unsigned long int n)
 {
 
 	if (n < 1)
 
 	return;
 
-	_devide(n >> 1);
+	_divide(n >> 1);
 
 	if (n & 1)
 

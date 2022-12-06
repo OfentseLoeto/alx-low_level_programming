@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * print_binary - Prints the binary representation of a number
  * @n: The number to represent in binary

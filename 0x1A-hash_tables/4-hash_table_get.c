@@ -6,26 +6,25 @@
  * @key: is the key you are loking for
  *
  * Return: the value associated with the element,
- * or NULL if key couldn’t be found
+ *         or NULL if key couldn’t be found
  */
 
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *elem;
-	unsigned long int idx;
+	hash_node_t *node;
+	unsigned long int index;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 	return (NULL);
 
-	idx = key_index((const unsigned char *) key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
-	if (idx >= ht->size)
+	if (index >= ht->size)
 	return (NULL);
+	node = ht->array[index];
 
-	elem = ht->array[idx];
-
-	while (strcmp(key, elem->key) != 0)
-	elem = elem->next;
-	return ((elem == NULL) ? NULL : elem->value);
+	while (node && strcmp(node->key, key) != 0)
+	node = node->next;
+	return ((node == NULL) ? NULL : node->value);
 }

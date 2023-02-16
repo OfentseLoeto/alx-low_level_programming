@@ -5,12 +5,12 @@
  * @ht:  a pointer to a hash table to print
  *
  * Description: Key/value pairs are printed in the order
- * they appear in the array of the hash table.
+ *              they appear in the array of the hash table.
  */
 
 void hash_table_print(const hash_table_t *ht)
 {
-	hash_node_t *elem;
+	hash_node_t *node;
 	unsigned long int i;
 	unsigned char comma_flag = 0;
 
@@ -27,15 +27,15 @@ void hash_table_print(const hash_table_t *ht)
 	if (comma_flag == 1)
 	printf(", ");
 
-	elem = ht->array[i];
+	node = ht->array[i];
 
-	while (elem != NULL)
+	while (node != NULL)
 	{
 
-	printf("'%s': '%s'", elem->key, elem->value);
-	elem = elem->next;
+	printf("'%s': '%s'", node->key, node->value);
+	node = node->next;
 
-	if (elem != NULL)
+	if (node != NULL)
 	printf(", ");
 	}
 
@@ -43,5 +43,5 @@ void hash_table_print(const hash_table_t *ht)
 	}
 	}
 
-	printf("{\n");
+	printf("}\n");
 }

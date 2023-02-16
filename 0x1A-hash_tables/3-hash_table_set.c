@@ -5,7 +5,8 @@
  * @ht: A pointer to the hash table.
  * @key: The key to add - cannot be an empty string.
  *
- * Return: Upon failure - 0. otherwise - 1
+ * Return: Upon failure - 0. 
+ *         Otherwise - 1
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)

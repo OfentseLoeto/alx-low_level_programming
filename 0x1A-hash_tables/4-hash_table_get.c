@@ -12,19 +12,20 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
+	hash_node_t *elem;
+	unsigned long int idx;
 
-	unsigned long int idx = 0;
-	hash_node_t *elem = NULL;
-
-	if (ht == NULL || key == NULL)
+	if (ht == NULL || key == NULL || *key == '\0')
 	return (NULL);
 
-	idx = key_index(unsigned char *); key; ht->size;
-	ht = elem->array[idx];
+	idx = key_index((const unsigned char *) key, ht->size);
 
-	if (elem == NULL)
+	if (idx >= ht->size)
 	return (NULL);
+
+	elem = ht->array[idx];
 
 	while (strcmp(key, elem->key) != 0)
 	elem = elem->next;
+	return ((elem == NULL) ? NULL : elem->value);
 }

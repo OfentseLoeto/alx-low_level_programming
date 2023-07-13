@@ -21,7 +21,7 @@ for (i = 0; i < size; i++)
 
 if (array[i] == value)
 
-return (int i);
+return (i);
 }
 
 return (-1);
